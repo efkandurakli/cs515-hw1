@@ -1,0 +1,33 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+data/
+
+# Checkpoints
+checkpoints/
+
+# Experiments
+experiments/
+
+# Comparison plots
+comparisons/
+
+# Summary
+SUMMARY.md
+
+# Report
+REPORT.md
+
+# Install
+INSTALL.md
+
+# Quick Reference
+QUICKREF.md
