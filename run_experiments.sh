@@ -202,6 +202,7 @@ python main.py --mode both --l1_lambda 0.001 \
 # - Best batch norm: with_bn (98.21%)
 # - Best architecture: 3-layer [512, 256, 128] (97.91%)
 # - Best activation: GELU (97.90%)
+# - Best optimizer: AdamW (97.87%)
 echo ""
 echo "========================================"
 echo "8. Best Model Configuration"
@@ -209,11 +210,11 @@ echo "========================================"
 
 echo "Running: Best configuration (combining top performers)..."
 python main.py --mode both \
-    --hidden_dims 256 128 \
+    --hidden_dims 512 256 128 \
     --activation gelu \
     --dropout 0.1 \
     --use_bn \
-    --optimizer adam \
+    --optimizer adamw \
     --lr 0.001 \
     --scheduler plateau \
     --scheduler_patience 5 \
